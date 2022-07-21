@@ -13,8 +13,86 @@
             "allow": [],
             "depConstraints": [
               {
-                "sourceTag": "*",
-                "onlyDependOnLibsWithTags": ["*"]
+                "sourceTag": "type:app",
+                "onlyDependOnLibsWithTags": [
+                  "type:api",
+                  "type:feature",
+                  "type:ui",
+                  "type:domain-logic",
+                  "type:util"
+                ]
+              },
+              {
+                "sourceTag": "type:api",
+                "onlyDependOnLibsWithTags": [
+                  "type:ui",
+                  "type:domain-logic",
+                  "type:util"
+                ]
+              },
+              {
+                "sourceTag": "type:feature",
+                "onlyDependOnLibsWithTags": [
+                  "type:ui",
+                  "type:domain-logic",
+                  "type:util"
+                ]
+              },
+              {
+                "sourceTag": "type:ui",
+                "onlyDependOnLibsWithTags": ["type:domain-logic", "type:util"]
+              },
+              {
+                "sourceTag": "type:domain-logic",
+                "onlyDependOnLibsWithTags": ["type:util"]
+              },
+              {
+                "sourceTag": "domain:shared",
+                "onlyDependOnLibsWithTags": ["domain:shared"]
+              },
+              {
+                "sourceTag": "domain:domain1",
+                "onlyDependOnLibsWithTags": ["domain:domain1", "domain:shared"]
+              },
+              {
+                "sourceTag": "domain:domain1",
+                "onlyDependOnLibsWithTags": ["domain:domain1", "domain:shared"]
+              },
+              {
+                "sourceTag": "domain:domain2",
+                "onlyDependOnLibsWithTags": ["domain:domain2", "domain:shared"]
+              },
+              {
+                "sourceTag": "domain:domain3",
+                "onlyDependOnLibsWithTags": ["domain:domain3", "domain:shared"]
+              },
+              {
+                "sourceTag": "domain:domain4",
+                "onlyDependOnLibsWithTags": ["domain:domain4", "domain:shared"]
+              },
+              {
+                "sourceTag": "domain:domain5",
+                "onlyDependOnLibsWithTags": ["domain:domain5", "domain:shared"]
+              },
+              {
+                "sourceTag": "domain:domain6",
+                "onlyDependOnLibsWithTags": ["domain:domain6", "domain:shared"]
+              },
+              {
+                "sourceTag": "domain:domain7",
+                "onlyDependOnLibsWithTags": ["domain:domain7", "domain:shared"]
+              },
+              {
+                "sourceTag": "domain:domain8",
+                "onlyDependOnLibsWithTags": ["domain:domain8", "domain:shared"]
+              },
+              {
+                "sourceTag": "domain:domain9",
+                "onlyDependOnLibsWithTags": ["domain:domain9", "domain:shared"]
+              },
+              {
+                "sourceTag": "domain:domain10",
+                "onlyDependOnLibsWithTags": ["domain:domain10", "domain:shared"]
               }
             ]
           }
